@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.background-container {
+  background-image: url('https://wallpaperaccess.com/full/1441947.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  background-position: center; /* Centers the background image */
+  min-height: 100vh; /* Ensures the container covers the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px; /* Adds gap at the top for the form */
+  padding-bottom: 50px; /* Adds gap at the bottom for scrolling */
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent effect */
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 800px; /* Increased width */
+  padding: 40px; /* Increased padding */
+}
+
+.form-title {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+  margin: -40px -40px 30px -40px; /* Adjusted margin to match increased padding */
+}
+
+.styled-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap between form elements */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Increased gap between label and input */
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea,
+select {
+  padding: 15px; /* Increased padding for input fields */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Slightly larger font size */
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px; /* Increased height for textarea */
+}
+
+.radio-label,
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  background-color: #333;
+}
+
+.submit-button {
+  padding: 15px 25px; /* Increased padding for the button */
+  font-size: 18px; /* Slightly larger font size for the button */
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #333;
+}
